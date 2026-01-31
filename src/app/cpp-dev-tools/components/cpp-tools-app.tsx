@@ -28,6 +28,8 @@ import {
   RotateCcw,
   Maximize2,
   Minimize2,
+  Github,
+  ExternalLink,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -620,10 +622,32 @@ Memory usage: 1.2 MB`)
                 Tools Hub
               </span>
             </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-6">
               Professional-grade C++ development tools including code formatter, linter,
               complexity analyzer, and compiler - all in your browser.
             </p>
+            <div className="flex items-center justify-center gap-4">
+              <a
+                href="https://github.com/MohamedWael2025/cpp-dev-tools"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" className="gap-2">
+                  <Github className="w-4 h-4" />
+                  View on GitHub
+                </Button>
+              </a>
+              <a
+                href="https://cpp-dev-tools.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="gap-2 bg-orange-500 hover:bg-orange-600">
+                  <ExternalLink className="w-4 h-4" />
+                  Open Standalone App
+                </Button>
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
